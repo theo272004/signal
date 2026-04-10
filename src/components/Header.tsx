@@ -30,7 +30,7 @@ const Header: React.FC = () => {
                 <div className={`max-w-5xl mx-auto nav-glass rounded-[2rem] px-6 md:px-8 py-4 flex items-center justify-between transition-all duration-500 ${scrolled ? 'py-3 shadow-lg' : ''}`}>
                     {/* Logo */}
                     <a href="/" className="flex items-center gap-2">
-                        <img src="/logo.png" alt="Signal Logo" className="w-10 h-10 rounded-lg object-cover" />
+                        <img src="/logo.png" alt="Signal Logo" className="w-12 h-12 object-contain" />
                         <span className="text-xl font-black text-brand-dark tracking-tight">Signal</span>
                     </a>
 
