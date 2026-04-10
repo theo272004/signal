@@ -6,7 +6,7 @@ import Home from './src/pages/Home';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen selection:bg-brand-primary selection:text-white">
         <Header />
         <Routes>
