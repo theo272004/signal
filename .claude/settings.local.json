@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(/c/Users/NICOLAS/Desktop/signal/node_modules/.bin/vite build:*)"
+    ]
+  }
+}
