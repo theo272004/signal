@@ -30,9 +30,7 @@ const Header: React.FC = () => {
                 <div className={`max-w-5xl mx-auto nav-glass rounded-[2rem] px-6 md:px-8 py-4 flex items-center justify-between transition-all duration-500 ${scrolled ? 'py-3 shadow-lg' : ''}`}>
                     {/* Logo */}
                     <a href="/" className="flex items-center gap-2">
-                        <div className="w-8 h-8 bg-brand-primary rounded-lg flex items-center justify-center">
-                            <span className="material-symbols-outlined text-white text-base" style={{ fontVariationSettings: "'FILL' 1, 'wght' 600" }}>signal_cellular_alt</span>
-                        </div>
+                        <img src="/logo.png" alt="Signal Logo" className="w-10 h-10 rounded-lg object-cover" />
                         <span className="text-xl font-black text-brand-dark tracking-tight">Signal</span>
                     </a>
 
