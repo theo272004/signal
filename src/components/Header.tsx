@@ -30,7 +30,18 @@ const Header: React.FC = () => {
                 <div className={`max-w-5xl mx-auto nav-glass rounded-[2rem] px-6 md:px-8 py-4 flex items-center justify-between transition-all duration-500 ${scrolled ? 'py-3 shadow-lg' : ''}`}>
                     {/* Logo */}
                     <a href="/" className="flex items-center gap-2">
-                        <img src="/logo.png" alt="Signal Logo" className="w-12 h-12 object-contain" />
+                        <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                            <defs>
+                                <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#DC2626;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#B91C1C;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="48" fill="url(#logoGrad)" />
+                            <path d="M50 35 L50 65 L68 65 L68 50 L50 50 Z" fill="#ffffff" />
+                            <path d="M32 50 L50 50 L50 65 L32 65 L32 50 Z" fill="#ffffff" />
+                            <circle cx="50" cy="50" r="22" fill="#ffffff" opacity="0.85" />
+                        </svg>
                         <span className="text-xl font-black text-brand-dark tracking-tight">Signal</span>
                     </a>
 
